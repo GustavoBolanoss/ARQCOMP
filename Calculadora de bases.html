@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+
+    <body>
+    <div class="container">
+    <center>
+         
+        <h1 style="color: white;">Conversor de Bases</h1>
+
+        <br><br>
+
+        <h3 style="color: grey;">Decimal</h3>
+        <input id="demo1" type="text" placeholder="Digite o valor em decimal">
+
+        <button onclick="converter()">Converter</button> <br> <br>
+
+      <b> <div id="demo2">Octal</div> <br> <br>
+        <div id="demo3">Hexadecimal</div> <br> <br>
+        <div id="demo4">Binario</div> <br> <br>
+    </b> 
+    </center>
+</div>
+        <script>
+ function converter() {
+        var valor = Number(demo1.value)
+        demo2.innerHTML = ` Octal <br> ${valor.toString(8)}`
+        demo3.innerHTML = ` Hexadecimal <br> ${valor.toString(16)}`
+        demo4.innerHTML = ` Binario <br> ${valor.toString(2)}`
+    }
+            
+            
+        </script>
+    </body>
+</html>
